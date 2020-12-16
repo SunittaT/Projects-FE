@@ -22,6 +22,7 @@ class QuickSearch extends React.Component {
         .then(data => this.setState({
             trips:data
         }))
+        
     }
 }
 export default QuickSearch;

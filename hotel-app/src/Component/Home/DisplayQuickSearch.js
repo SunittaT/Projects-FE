@@ -7,7 +7,7 @@ const DisplayQuickSearch = (props) => {
         if(trips){
             return trips.map((item) => {
                     return (
-                        <Link to='/'>
+                        <Link to={`/list/${item.trip}`} key={item._id}>
                             <div className="tileContainer">
                                 <div className="tileComponent1">
                                     <img src={item.image} alt="trips"/>
