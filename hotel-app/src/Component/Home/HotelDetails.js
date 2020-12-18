@@ -28,9 +28,9 @@ class HotelDetails extends React.Component {
         const id = this.props.match.params.id
         const HotelUrl = `https://developerfunnel.herokuapp.com/hotelsdetails/${id}`;
         const hotelResp = await axios.get(HotelUrl)
-        this.setState(
-                       { hotelDetails: hotelResp.data[0]}
-                    )
+        this.setState({ hotelDetails: hotelResp.data[0]})
+        sessionStorage.setItem('hotel',this.state.hotelDetails.name)
+        
     }
     // componentDidMount(props){
     //     // console.log("level1")

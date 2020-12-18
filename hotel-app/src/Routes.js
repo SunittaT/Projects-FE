@@ -1,4 +1,5 @@
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import GetBooking from './Component/Booking/GetBooking';
 import PlaceBooking from './Component/Booking/PlaceBooking';
 import Footer from './Component/Footer';
 import Header from './Component/Header';
@@ -17,6 +18,7 @@ const Routes = () => {
                 {/* <Route path='/test' component={QuickSearch}/> */}
                 <Route path='/hoteldetails/:id'component={HotelDetails}/>
                 <Route path='/list/:id' component={Listing}/>
+                <Route exact path='/booking' component={GetBooking}/>
                 <Route path='/booking/:id' component={PlaceBooking}/>
                 
             </Switch>
